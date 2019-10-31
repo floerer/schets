@@ -1,0 +1,8 @@
+C:\Users\flo\Desktop\SchetsEditor\bin\Debug\SchetsEditor.exe
+C:\Users\flo\Desktop\SchetsEditor\bin\Debug\SchetsEditor.pdb
+C:\Users\flo\Desktop\SchetsEditor\obj\Debug\SchetsEditor2008.csprojAssemblyReference.cache
+C:\Users\flo\Desktop\SchetsEditor\obj\Debug\SchetsEditor.Properties.Resources.resources
+C:\Users\flo\Desktop\SchetsEditor\obj\Debug\SchetsEditor2008.csproj.GenerateResource.cache
+C:\Users\flo\Desktop\SchetsEditor\obj\Debug\SchetsEditor2008.csproj.CoreCompileInputs.cache
+C:\Users\flo\Desktop\SchetsEditor\obj\Debug\SchetsEditor.exe
+C:\Users\flo\Desktop\SchetsEditor\obj\Debug\SchetsEditor.pdb
