@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
 
 namespace SchetsEditor
 {   public class SchetsControl : UserControl
@@ -53,16 +52,6 @@ namespace SchetsEditor
         public void VeranderKleurViaMenu(object obj, EventArgs ea)
         {   string kleurNaam = ((ToolStripMenuItem)obj).Text;
             penkleur = Color.FromName(kleurNaam);
-        }
-
-        public void Opslaan(object obj, EventArgs ea)
-        {   Bitmap image = schets.getBitmap();
-            if(((ToolStripMenuItem)obj).Text == "PNG")
-                image.Save("mijnPlaatje.png", ImageFormat.Png);
-            if(((ToolStripMenuItem)obj).Text == "JPEG")
-                image.Save("mijnPlaatje.jpeg", ImageFormat.Jpeg);
-            if(((ToolStripMenuItem)obj).Text == "BMP")
-                image.Save("mijnPlaatje.bmp", ImageFormat.Bmp);
         }
     }
 }

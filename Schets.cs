@@ -7,22 +7,15 @@ namespace SchetsEditor
     public class Schets
     {
         private Bitmap bitmap;
-        //static public List<Figuur> elementen;
         
         public Schets()
         {
             bitmap = new Bitmap(1, 1);
-            //elementen = new List<Figuur>();
         }
         public Graphics BitmapGraphics
         {
             get { return Graphics.FromImage(bitmap); }
         }
-
-        public Bitmap getBitmap(){
-            return bitmap;
-        }
-
         public void VeranderAfmeting(Size sz)
         {
             if (sz.Width > bitmap.Size.Width || sz.Height > bitmap.Size.Height)
@@ -39,6 +32,7 @@ namespace SchetsEditor
         public void Teken(Graphics gr)
         {
             gr.DrawImage(bitmap, 0, 0);
+            // Teken hier de lijst met objecten
         }
         public void Schoon()
         {

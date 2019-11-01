@@ -50,6 +50,7 @@ namespace SchetsEditor
                                     , new TekstTool()
                                     , new GumTool()
                                     , new CirkelTool()
+                                    , new VolCirkelTool()
                                     };
             String[] deKleuren = { "Black", "Red", "Green", "Blue"
                                  , "Yellow", "Magenta", "Cyan" 
@@ -121,11 +122,6 @@ namespace SchetsEditor
             foreach (string k in kleuren)
                 submenu.DropDownItems.Add(k, null, schetscontrol.VeranderKleurViaMenu);
             menu.DropDownItems.Add(submenu);
-            ToolStripMenuItem filetype = new ToolStripMenuItem("Opslaan");
-            filetype.DropDownItems.Add("PNG", null, schetscontrol.Opslaan);
-            filetype.DropDownItems.Add("JPEG", null, schetscontrol.Opslaan);
-            filetype.DropDownItems.Add("BMP", null, schetscontrol.Opslaan);
-            menu.DropDownItems.Add(filetype);
             menuStrip.Items.Add(menu);
         }
 
@@ -136,8 +132,8 @@ namespace SchetsEditor
             {
                 RadioButton b = new RadioButton();
                 b.Appearance = Appearance.Button;
-                b.Size = new Size(45, 62);
-                b.Location = new Point(10, 10 + t * 62);
+                b.Size = new Size(45, 60);
+                b.Location = new Point(10, 10 + t * 55);
                 b.Tag = tool;
                 b.Text = tool.ToString();
                 b.Image = (Image)resourcemanager.GetObject(tool.ToString());
